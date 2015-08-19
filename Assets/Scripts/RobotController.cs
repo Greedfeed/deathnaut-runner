@@ -22,12 +22,12 @@ public class RobotController : MonoBehaviour {
 	}
 
 	void FixedUpdate() {  
-		rigidbody2D.velocity = new Vector2 (maxSpeed, rigidbody2D.velocity.y);
+		GetComponent<Rigidbody2D>().velocity = new Vector2 (maxSpeed, GetComponent<Rigidbody2D>().velocity.y);
 
 		grounded = Physics2D.OverlapCircle (groundCheck.position,groundRadius,whatIsGround);
 		anim.SetBool ("Ground", grounded);
 
-		anim.SetFloat ("vSpeed", rigidbody2D.velocity.y);
+		anim.SetFloat ("vSpeed", GetComponent<Rigidbody2D>().velocity.y);
 	}
 
 	void Update(){
@@ -70,7 +70,7 @@ public class RobotController : MonoBehaviour {
 		if (grounded && ( Input.GetKeyDown (KeyCode.Space) )) {
 			anim.SetBool("Ground", false);
 
-			rigidbody2D.AddForce(new Vector2(0, jumpForce));
+			GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
 		}
 	}
 
