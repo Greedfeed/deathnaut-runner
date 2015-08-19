@@ -1,6 +1,17 @@
 fileFormatVersion: 2
 guid: 1946fcca07952b84886073d3f021a214
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: MMX_Running_0
+    21300002: MMX_Running_1
+    21300004: MMX_Running_2
+    21300006: MMX_Running_3
+    21300008: MMX_Running_4
+    21300010: MMX_Running_5
+    21300012: MMX_Running_6
+    21300014: MMX_Running_7
+    21300016: MMX_Running_8
+    21300018: MMX_Running_9
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -19,6 +30,9 @@ TextureImporter:
   isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 1024
@@ -29,12 +43,14 @@ TextureImporter:
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
+  rGBM: 0
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
@@ -54,6 +70,7 @@ TextureImporter:
         height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: MMX_Running_1
       rect:
         serializedVersion: 2
@@ -63,6 +80,7 @@ TextureImporter:
         height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: MMX_Running_2
       rect:
         serializedVersion: 2
@@ -72,6 +90,7 @@ TextureImporter:
         height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: MMX_Running_3
       rect:
         serializedVersion: 2
@@ -81,6 +100,7 @@ TextureImporter:
         height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: MMX_Running_4
       rect:
         serializedVersion: 2
@@ -90,6 +110,7 @@ TextureImporter:
         height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: MMX_Running_5
       rect:
         serializedVersion: 2
@@ -99,6 +120,7 @@ TextureImporter:
         height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: MMX_Running_6
       rect:
         serializedVersion: 2
@@ -108,6 +130,7 @@ TextureImporter:
         height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: MMX_Running_7
       rect:
         serializedVersion: 2
@@ -117,6 +140,7 @@ TextureImporter:
         height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: MMX_Running_8
       rect:
         serializedVersion: 2
@@ -126,6 +150,7 @@ TextureImporter:
         height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: MMX_Running_9
       rect:
         serializedVersion: 2
@@ -135,5 +160,8 @@ TextureImporter:
         height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

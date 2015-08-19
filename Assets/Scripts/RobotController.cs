@@ -32,45 +32,40 @@ public class RobotController : MonoBehaviour {
 
 	void Update(){
 
-		GameObject[] shots = GameObject.FindGameObjectsWithTag("Bolt");
-		int shotNum = shots.Length;
+				GameObject[] shots = GameObject.FindGameObjectsWithTag ("Bolt");
+				int shotNum = shots.Length;
 
-		// ANDROID CONTROLS 
-		/*
-		if (Input.touches.Length >= 1)
-		{
-			for (int i = 0; i < Input.touchCount; i++)
-			{
-				var touch = Input.GetTouch(i);
+		if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer) {
+			// ANDROID CONTROLS 
+			if (Input.touches.Length >= 1) {
+					for (int i = 0; i < Input.touchCount; i++) {
+							var touch = Input.GetTouch (i);
 
-				if (grounded && (touch.position.x < Screen.width/2) && Input.GetTouch(i).phase == TouchPhase.Began)
-				{
-					anim.SetBool("Ground", false);
-					
-					rigidbody2D.AddForce(new Vector2(0, jumpForce));
-				}
-				else if (((touch.position.x > Screen.width/2) && Time.time > nextFire) && shotNum < 3 )
-				{
-					nextFire = Time.time + fireRate;
-					
-					Instantiate (shot, shotSpawn.position, shotSpawn.rotation);
-				}
+							if (grounded && (touch.position.x < Screen.width / 2) && Input.GetTouch (i).phase == TouchPhase.Began) {
+									anim.SetBool ("Ground", false);
+				
+									GetComponent<Rigidbody2D>().AddForce (new Vector2 (0, jumpForce));
+							} else if (((touch.position.x > Screen.width / 2) && Time.time > nextFire) && shotNum < 3) {
+									nextFire = Time.time + fireRate;
+				
+									Instantiate (shot, shotSpawn.position, shotSpawn.rotation);
+							}
+					}
 			}
-		}*/
-		
-		
-		// WINDOWS CONTROLS/*
-		if ( (Input.GetButton("Fire1") && Time.time > nextFire) && shotNum < 3 ) {
-			nextFire = Time.time + fireRate;
+		} else {
+			// WINDOWS CONTROLS
+			if ((Input.GetButton ("Fire1") && Time.time > nextFire) && shotNum < 3) {
+					nextFire = Time.time + fireRate;
 
-			Instantiate (shot, shotSpawn.position, shotSpawn.rotation);
-		}
+					Instantiate (shot, shotSpawn.position, shotSpawn.rotation);
+			}
 			
 
-		if (grounded && ( Input.GetKeyDown (KeyCode.Space) )) {
-			anim.SetBool("Ground", false);
+			if (grounded && (Input.GetKeyDown (KeyCode.Space))) {
+					anim.SetBool ("Ground", false);
 
-			GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
+					GetComponent<Rigidbody2D> ().AddForce (new Vector2 (0, jumpForce));
+			}
 		}
 	}
 
